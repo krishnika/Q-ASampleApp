@@ -63,7 +63,6 @@ class QnAAnswerTableViewCell: UITableViewCell {
                     if let url = URL(string: imageUrl) {
                         downloadImage(url: url)
                     }
-                    
                 }
                 
             }

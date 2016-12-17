@@ -86,6 +86,17 @@ class QnAViewController: UIViewController {
         }
     }
     
+    func heightForView(text:String, font:UIFont, width: CGFloat) -> CGFloat{
+        let label: UILabel = UILabel(frame: CGRect(x: 0, y: 0, width: width, height: CGFloat.greatestFiniteMagnitude))
+        label.numberOfLines = 0
+        label.lineBreakMode = NSLineBreakMode.byWordWrapping
+        label.font = font
+        label.text = text
+        
+        label.sizeToFit()
+        return label.frame.height
+    }
+    
 }
 
 extension QnAViewController : UITableViewDelegate, UITableViewDataSource {
@@ -130,6 +141,13 @@ extension QnAViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "questionCellTapped", sender: nil)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let font = UIFont(name: "HelveticaNeue-Bold", size: 15)
+        let height = heightForView(text: postList[indexPath.row].postBody ?? Utility.kNullConstant, font: font!, width: (UIScreen.main.bounds.size.width - 40))
+        
+        return height + 130
     }
     
 }
