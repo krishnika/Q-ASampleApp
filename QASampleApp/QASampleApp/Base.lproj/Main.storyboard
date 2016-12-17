@@ -312,11 +312,35 @@
                     <tabBarItem key="tabBarItem" title="Q&amp;A" image="second" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="tableView" destination="Uig-pg-F6q" id="KYv-CY-uSy"/>
+                        <segue destination="ULp-2x-7EX" kind="showDetail" identifier="questionCellTapped" action="showViewController:sender:" id="ct6-5g-yPf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
+        </scene>
+        <!--Question-->
+        <scene sceneID="CJL-Um-5NV">
+            <objects>
+                <viewController id="1ql-Mv-5RC" customClass="SingleQuestionViewController" customModule="QASampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K7K-pe-IE0"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mkh-Gk-jSa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="19U-XL-lpy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Question" id="fQO-gd-z6R">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="6sf-Ia-mB2">
+                            <color key="tintColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uP7-X4-IGJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2543.1999999999998" y="358.4707646176912"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -338,6 +362,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Wgn-6p-OAR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ULp-2x-7EX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="az9-Se-9kt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1ql-Mv-5RC" kind="relationship" relationship="rootViewController" id="1wE-VO-Jbb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y5R-Ao-AHd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1604" y="358.4707646176912"/>
         </scene>
     </scenes>
     <resources>

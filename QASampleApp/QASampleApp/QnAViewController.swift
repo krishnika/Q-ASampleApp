@@ -128,4 +128,8 @@ extension QnAViewController : UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "questionCellTapped", sender: nil)
+    }
+    
 }
