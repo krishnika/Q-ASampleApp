@@ -23,6 +23,7 @@
 		44F84B4A1E05B2C30038158C /* QnAAnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F84B491E05B2C30038158C /* QnAAnswerTableViewCell.swift */; };
 		44F84B4C1E05B2E00038158C /* QnAEmptyAnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F84B4B1E05B2E00038158C /* QnAEmptyAnswerTableViewCell.swift */; };
 		44F84B521E05C83E0038158C /* AskQuestionHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F84B511E05C83E0038158C /* AskQuestionHeaderCell.swift */; };
+		44F84B541E05CCB40038158C /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F84B531E05CCB40038158C /* NavigationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		44F84B491E05B2C30038158C /* QnAAnswerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QnAAnswerTableViewCell.swift; sourceTree = "<group>"; };
 		44F84B4B1E05B2E00038158C /* QnAEmptyAnswerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QnAEmptyAnswerTableViewCell.swift; sourceTree = "<group>"; };
 		44F84B511E05C83E0038158C /* AskQuestionHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AskQuestionHeaderCell.swift; sourceTree = "<group>"; };
+		44F84B531E05CCB40038158C /* NavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				44F84B451E0597220038158C /* AppConfiguration.swift */,
 				44F84B471E0598800038158C /* Utility.swift */,
 				44F84B3F1E056E580038158C /* Third Party */,
+				44F84B531E05CCB40038158C /* NavigationView.swift */,
 			);
 			path = QASampleApp;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				44F84B411E056F1D0038158C /* SwiftyJSON.swift in Sources */,
 				44F84B461E0597220038158C /* AppConfiguration.swift in Sources */,
 				44F84B101E05634A0038158C /* FirstViewController.swift in Sources */,
+				44F84B541E05CCB40038158C /* NavigationView.swift in Sources */,
 				44F84B521E05C83E0038158C /* AskQuestionHeaderCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
