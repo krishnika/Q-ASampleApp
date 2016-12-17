@@ -50,20 +50,25 @@ class QnAViewController: UIViewController {
                     
                     if let data = data as NSData? {
                         var jsonError:NSError? = nil
-                        let json = JSON(data: data as Data, options:JSONSerialization.ReadingOptions.allowFragments, error: &jsonError)
+                        _ = JSON(data: data as Data, options:JSONSerialization.ReadingOptions.allowFragments, error: &jsonError)
                         
-                        if let jsonError = jsonError {
+                        if jsonError != nil {
                             return
                         }
                         else {
                             print(NSString(data: data as Data, encoding: String.Encoding.utf8.rawValue) ?? "")
                         }
-                    }  
+                    }
                 }
             }
         }
         dataTask?.resume()
     }
+    
+    func processServerData() {
+        
+    }
+    
 }
 
 extension QnAViewController : UITableViewDelegate, UITableViewDataSource {

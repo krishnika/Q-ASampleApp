@@ -151,6 +151,51 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xLj-SX-6jq" id="cFo-JN-NeL">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="131"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hBz-vm-L8r">
+                                                    <rect key="frame" x="0.0" y="1" width="375" height="120"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A month old girl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKv-4C-ydS">
+                                                            <rect key="frame" x="20" y="10" width="78" height="13"/>
+                                                            <color key="backgroundColor" red="0.97647058819999999" green="0.96470588239999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                                            <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLS-Vg-9gf">
+                                                            <rect key="frame" x="20" y="33" width="335" height="18"/>
+                                                            <string key="text">postsfeedcontainerpostsfeedcontainerpostsfeedcontainerpostsfeedcontainerpostsfeedcontainerpostsfeedcontainerpostsfeedcontainerpostsfeedcontainerpostsfeedcontai</string>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dzj-MX-bEQ">
+                                                            <rect key="frame" x="20" y="71" width="335" height="30"/>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <constraints>
+                                                        <constraint firstItem="dzj-MX-bEQ" firstAttribute="top" secondItem="XLS-Vg-9gf" secondAttribute="bottom" constant="20" id="1CE-ZN-FZ4"/>
+                                                        <constraint firstItem="XLS-Vg-9gf" firstAttribute="leading" secondItem="lKv-4C-ydS" secondAttribute="leading" id="HeF-Db-0DS"/>
+                                                        <constraint firstItem="lKv-4C-ydS" firstAttribute="top" secondItem="hBz-vm-L8r" secondAttribute="top" constant="10" id="INH-XL-NfM"/>
+                                                        <constraint firstItem="XLS-Vg-9gf" firstAttribute="top" secondItem="lKv-4C-ydS" secondAttribute="bottom" constant="10" id="T2L-Wp-FUV"/>
+                                                        <constraint firstItem="dzj-MX-bEQ" firstAttribute="leading" secondItem="XLS-Vg-9gf" secondAttribute="leading" id="aWT-fc-s8P"/>
+                                                        <constraint firstAttribute="trailing" secondItem="XLS-Vg-9gf" secondAttribute="trailing" constant="20" id="bOD-l2-X3W"/>
+                                                        <constraint firstItem="dzj-MX-bEQ" firstAttribute="trailing" secondItem="XLS-Vg-9gf" secondAttribute="trailing" id="iDU-gL-j62"/>
+                                                        <constraint firstItem="lKv-4C-ydS" firstAttribute="leading" secondItem="hBz-vm-L8r" secondAttribute="leading" constant="20" id="kW8-G8-Hgl"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="hBz-vm-L8r" firstAttribute="top" secondItem="cFo-JN-NeL" secondAttribute="top" constant="1" id="Nqs-NP-Unm"/>
+                                                <constraint firstAttribute="trailing" secondItem="hBz-vm-L8r" secondAttribute="trailing" id="VqM-7o-iVR"/>
+                                                <constraint firstAttribute="bottom" secondItem="hBz-vm-L8r" secondAttribute="bottom" constant="10" id="ns2-Ix-raJ"/>
+                                                <constraint firstItem="hBz-vm-L8r" firstAttribute="leading" secondItem="cFo-JN-NeL" secondAttribute="leading" id="tkw-dw-wLQ"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="headerCell" rowHeight="60" id="lA6-tV-ygj">
@@ -231,6 +276,8 @@
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="0.65490196078431373" green="0.44705882352941173" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
