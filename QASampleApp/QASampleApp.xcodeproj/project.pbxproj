@@ -16,6 +16,7 @@
 		44F84B251E05634A0038158C /* QASampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F84B241E05634A0038158C /* QASampleAppTests.swift */; };
 		44F84B301E05634A0038158C /* QASampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F84B2F1E05634A0038158C /* QASampleAppUITests.swift */; };
 		44F84B3E1E0564890038158C /* QnAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F84B3D1E0564890038158C /* QnAViewController.swift */; };
+		44F84B411E056F1D0038158C /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F84B401E056F1D0038158C /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		44F84B2F1E05634A0038158C /* QASampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QASampleAppUITests.swift; sourceTree = "<group>"; };
 		44F84B311E05634A0038158C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44F84B3D1E0564890038158C /* QnAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QnAViewController.swift; sourceTree = "<group>"; };
+		44F84B401E056F1D0038158C /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				44F84B181E05634A0038158C /* LaunchScreen.storyboard */,
 				44F84B1B1E05634A0038158C /* Info.plist */,
 				44F84B3D1E0564890038158C /* QnAViewController.swift */,
+				44F84B3F1E056E580038158C /* Third Party */,
 			);
 			path = QASampleApp;
 			sourceTree = "<group>";
@@ -129,6 +132,14 @@
 				44F84B311E05634A0038158C /* Info.plist */,
 			);
 			path = QASampleAppUITests;
+			sourceTree = "<group>";
+		};
+		44F84B3F1E056E580038158C /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				44F84B401E056F1D0038158C /* SwiftyJSON.swift */,
+			);
+			name = "Third Party";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +279,7 @@
 				44F84B121E05634A0038158C /* SecondViewController.swift in Sources */,
 				44F84B3E1E0564890038158C /* QnAViewController.swift in Sources */,
 				44F84B0E1E05634A0038158C /* AppDelegate.swift in Sources */,
+				44F84B411E056F1D0038158C /* SwiftyJSON.swift in Sources */,
 				44F84B101E05634A0038158C /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +525,7 @@
 				44F84B361E05634A0038158C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44F84B371E05634A0038158C /* Build configuration list for PBXNativeTarget "QASampleAppTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +534,7 @@
 				44F84B391E05634A0038158C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44F84B3A1E05634A0038158C /* Build configuration list for PBXNativeTarget "QASampleAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +543,7 @@
 				44F84B3C1E05634A0038158C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
