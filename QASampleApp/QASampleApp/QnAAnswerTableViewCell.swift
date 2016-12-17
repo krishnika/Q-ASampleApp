@@ -71,6 +71,9 @@ class QnAAnswerTableViewCell: UITableViewCell {
             if answerCount > 1 {
                 answerCountLabel.text = "\(answerCount) more answers"
             }
+            else {
+                answerCountLabel.isHidden = true
+            }
             
         }
         
