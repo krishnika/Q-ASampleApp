@@ -11,6 +11,7 @@ import UIKit
 class QnAViewController: UIViewController {
 
     var postList: [Post] = []
+    var pagination = Pagination()
     
     @IBOutlet weak var tableView: UITableView!
     let defaultSession = URLSession(configuration: URLSessionConfiguration.default)
@@ -79,6 +80,7 @@ class QnAViewController: UIViewController {
                 } 
             }
         }
+        pagination.currentCount = postList.count
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
@@ -119,6 +121,10 @@ extension QnAViewController : UITableViewDelegate, UITableViewDataSource {
 
     }
     
-    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row == pagination.currentCount - 1 {
+            self.fetchPostsData()
+        }
+    }
     
 }
