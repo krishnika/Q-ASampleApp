@@ -106,7 +106,8 @@ extension QnAViewController : UITableViewDelegate, UITableViewDataSource {
             return cell
         }
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "emptyPost", for: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "emptyPost", for: indexPath) as! QnAEmptyAnswerTableViewCell
+        cell.configureCell(post: postList[indexPath.row])
         
         return cell
     }

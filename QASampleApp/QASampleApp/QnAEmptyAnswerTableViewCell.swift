@@ -10,6 +10,7 @@ import UIKit
 
 class QnAEmptyAnswerTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var questionLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,4 +22,10 @@ class QnAEmptyAnswerTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    func configureCell(post: Post) {
+        
+        questionLabel.text = post.postBody
+        
+    }
+    
 }

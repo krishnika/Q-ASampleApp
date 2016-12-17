@@ -168,7 +168,7 @@
                                             <outlet property="userName" destination="mrJ-PP-WSl" id="sHG-8O-MxT"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="emptyPost" rowHeight="145" id="xLj-SX-6jq">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="emptyPost" rowHeight="145" id="xLj-SX-6jq" customClass="QnAEmptyAnswerTableViewCell" customModule="QASampleApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="239" width="375" height="145"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xLj-SX-6jq" id="cFo-JN-NeL">
@@ -220,6 +220,9 @@
                                                 <constraint firstItem="hBz-vm-L8r" firstAttribute="leading" secondItem="cFo-JN-NeL" secondAttribute="leading" id="tkw-dw-wLQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="questionLabel" destination="XLS-Vg-9gf" id="ICe-a7-cti"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="headerCell" rowHeight="60" id="lA6-tV-ygj">
                                         <rect key="frame" x="0.0" y="384" width="375" height="60"/>
