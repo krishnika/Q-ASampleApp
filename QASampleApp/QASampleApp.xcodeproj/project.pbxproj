@@ -17,6 +17,7 @@
 		44F84B301E05634A0038158C /* QASampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F84B2F1E05634A0038158C /* QASampleAppUITests.swift */; };
 		44F84B3E1E0564890038158C /* QnAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F84B3D1E0564890038158C /* QnAViewController.swift */; };
 		44F84B411E056F1D0038158C /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F84B401E056F1D0038158C /* SwiftyJSON.swift */; };
+		44F84B441E0582B60038158C /* QnAModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F84B431E0582B60038158C /* QnAModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		44F84B311E05634A0038158C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44F84B3D1E0564890038158C /* QnAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QnAViewController.swift; sourceTree = "<group>"; };
 		44F84B401E056F1D0038158C /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		44F84B431E0582B60038158C /* QnAModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QnAModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		44F84B0C1E05634A0038158C /* QASampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				44F84B421E0582950038158C /* QnA */,
 				44F84B0D1E05634A0038158C /* AppDelegate.swift */,
 				44F84B0F1E05634A0038158C /* FirstViewController.swift */,
 				44F84B111E05634A0038158C /* SecondViewController.swift */,
@@ -110,7 +113,6 @@
 				44F84B161E05634A0038158C /* Assets.xcassets */,
 				44F84B181E05634A0038158C /* LaunchScreen.storyboard */,
 				44F84B1B1E05634A0038158C /* Info.plist */,
-				44F84B3D1E0564890038158C /* QnAViewController.swift */,
 				44F84B3F1E056E580038158C /* Third Party */,
 			);
 			path = QASampleApp;
@@ -140,6 +142,15 @@
 				44F84B401E056F1D0038158C /* SwiftyJSON.swift */,
 			);
 			name = "Third Party";
+			sourceTree = "<group>";
+		};
+		44F84B421E0582950038158C /* QnA */ = {
+			isa = PBXGroup;
+			children = (
+				44F84B3D1E0564890038158C /* QnAViewController.swift */,
+				44F84B431E0582B60038158C /* QnAModel.swift */,
+			);
+			name = QnA;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44F84B441E0582B60038158C /* QnAModel.swift in Sources */,
 				44F84B121E05634A0038158C /* SecondViewController.swift in Sources */,
 				44F84B3E1E0564890038158C /* QnAViewController.swift in Sources */,
 				44F84B0E1E05634A0038158C /* AppDelegate.swift in Sources */,

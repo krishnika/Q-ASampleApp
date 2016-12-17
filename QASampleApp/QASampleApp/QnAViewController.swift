@@ -10,6 +10,9 @@ import UIKit
 
 class QnAViewController: UIViewController {
 
+    var postList: [Post] = []
+    
+    @IBOutlet weak var tableView: UITableView!
     let defaultSession = URLSession(configuration: URLSessionConfiguration.default)
     var dataTask: URLSessionDataTask?
     
@@ -50,13 +53,16 @@ class QnAViewController: UIViewController {
                     
                     if let data = data as NSData? {
                         var jsonError:NSError? = nil
-                        _ = JSON(data: data as Data, options:JSONSerialization.ReadingOptions.allowFragments, error: &jsonError)
+                        let json = JSON(data: data as Data, options:JSONSerialization.ReadingOptions.allowFragments, error: &jsonError)
                         
                         if jsonError != nil {
                             return
                         }
                         else {
                             print(NSString(data: data as Data, encoding: String.Encoding.utf8.rawValue) ?? "")
+                            if json != nil {
+                                self.processServerData(json: json)
+                            }
                         }
                     }
                 }
@@ -65,8 +71,17 @@ class QnAViewController: UIViewController {
         dataTask?.resume()
     }
     
-    func processServerData() {
-        
+    func processServerData(json: JSON) {
+        if json["status"] == "success" {
+            for items in json["result"].array! {
+                if let postItem = Post(json: items) {
+                    self.postList.append(postItem)
+                } 
+            }
+        }
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
     
 }
@@ -78,7 +93,7 @@ extension QnAViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return self.postList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
