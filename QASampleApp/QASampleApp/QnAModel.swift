@@ -9,14 +9,20 @@
 import Foundation
 
 
-class UserDetails {
+struct UserDetails {
     var profilePic: String?
     var name: String?
+    
 }
 
 class Answer {
     var user: UserDetails?
     var answerBody: String?
+    
+    init?(json: JSON) {
+        answerBody = json["answer"]["body"].string
+        user = UserDetails(profilePic: json["user"]["name"].string, name: json["user"]["profilepic"].string)
+    }
 }
 
 class Post {
@@ -29,6 +35,11 @@ class Post {
         postBody = json["shortenedText"].string
         kidAge = json["kidAgeGroup"].double
         
+        for answerItems in json["answers"].array! {
+            if let answer = Answer(json: answerItems) {
+                answers.append(answer)
+            }
+        }
     }
 }
 
