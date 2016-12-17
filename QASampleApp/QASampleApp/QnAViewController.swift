@@ -113,7 +113,7 @@ extension QnAViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let header = tableView.dequeueReusableCell(withIdentifier: "headerCell")! as UITableViewCell
+        let header = tableView.dequeueReusableCell(withIdentifier: "headerCell")! as! AskQuestionHeaderCell
         return header
     }
     
