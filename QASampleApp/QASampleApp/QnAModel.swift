@@ -9,6 +9,8 @@
 import Foundation
 
 
+
+
 struct UserDetails {
     var profilePic: String?
     var name: String?
@@ -21,7 +23,7 @@ class Answer {
     
     init?(json: JSON) {
         answerBody = json["answer"]["body"].string
-        user = UserDetails(profilePic: json["user"]["name"].string, name: json["user"]["profilepic"].string)
+        user = UserDetails(profilePic: json["user"]["profilepic"].string, name: json["user"]["name"].string)
     }
 }
 

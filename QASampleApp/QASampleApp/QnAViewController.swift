@@ -101,12 +101,12 @@ extension QnAViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if self.postList[indexPath.row].answers.count > 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "answerPost", for: indexPath) as UITableViewCell
-            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "answerPost", for: indexPath) as! QnAAnswerTableViewCell
+            cell.configureCell(post: postList[indexPath.row])
             return cell
         }
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "emptyPost", for: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "emptyPost", for: indexPath) as! UITableViewCell
         
         return cell
     }

@@ -10,5 +10,6 @@ import Foundation
 
 class Utility: NSObject {
     
+    static let kNullConstant = "NA"
     
 }

@@ -20,6 +20,8 @@
 		44F84B441E0582B60038158C /* QnAModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F84B431E0582B60038158C /* QnAModel.swift */; };
 		44F84B461E0597220038158C /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F84B451E0597220038158C /* AppConfiguration.swift */; };
 		44F84B481E0598800038158C /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F84B471E0598800038158C /* Utility.swift */; };
+		44F84B4A1E05B2C30038158C /* QnAAnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F84B491E05B2C30038158C /* QnAAnswerTableViewCell.swift */; };
+		44F84B4C1E05B2E00038158C /* QnAEmptyAnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F84B4B1E05B2E00038158C /* QnAEmptyAnswerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		44F84B431E0582B60038158C /* QnAModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QnAModel.swift; sourceTree = "<group>"; };
 		44F84B451E0597220038158C /* AppConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		44F84B471E0598800038158C /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		44F84B491E05B2C30038158C /* QnAAnswerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QnAAnswerTableViewCell.swift; sourceTree = "<group>"; };
+		44F84B4B1E05B2E00038158C /* QnAEmptyAnswerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QnAEmptyAnswerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,8 @@
 			children = (
 				44F84B3D1E0564890038158C /* QnAViewController.swift */,
 				44F84B431E0582B60038158C /* QnAModel.swift */,
+				44F84B491E05B2C30038158C /* QnAAnswerTableViewCell.swift */,
+				44F84B4B1E05B2E00038158C /* QnAEmptyAnswerTableViewCell.swift */,
 			);
 			name = QnA;
 			sourceTree = "<group>";
@@ -297,6 +303,8 @@
 				44F84B121E05634A0038158C /* SecondViewController.swift in Sources */,
 				44F84B3E1E0564890038158C /* QnAViewController.swift in Sources */,
 				44F84B0E1E05634A0038158C /* AppDelegate.swift in Sources */,
+				44F84B4C1E05B2E00038158C /* QnAEmptyAnswerTableViewCell.swift in Sources */,
+				44F84B4A1E05B2C30038158C /* QnAAnswerTableViewCell.swift in Sources */,
 				44F84B481E0598800038158C /* Utility.swift in Sources */,
 				44F84B411E056F1D0038158C /* SwiftyJSON.swift in Sources */,
 				44F84B461E0597220038158C /* AppConfiguration.swift in Sources */,
